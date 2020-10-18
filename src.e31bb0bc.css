@@ -271,11 +271,10 @@ li {
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
-    top: 50%;
     left: 50%;
     width: 70vw;
     height: auto;
-    transform: translate(-50%, -35%) scale(1);
+    transform: translate(-50%, 10%) scale(1);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -750,6 +749,9 @@ li {
 .menu-button:focus {
   outline: none;
 }
+.menu-button.is-open {
+  position: fixed;
+}
 .menu-button.is-open .icon-burger {
   display: none;
 }
@@ -760,21 +762,16 @@ li {
 }
 @media screen and (max-width: 767px) {
   .menu-button.is-open {
-    position: absolute;
+    position: fixed;
     top: 23px;
     right: 28px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .menu-button.is-open {
-    position: absolute;
+    position: fixed;
     right: 34px;
     top: 23px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .menu-button {
-    margin-right: 20px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -789,7 +786,7 @@ li {
 @media screen and (max-width: 1279px) {
   .menu__container {
     z-index: 800;
-    position: absolute;
+    position: fixed;
     height: 100vh;
     top: 0;
     right: 0;
@@ -879,6 +876,12 @@ li {
   background-color: #ECEBEB;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .menu__container.is-open ~ .btn__buy {
+    display: none;
+  }
+}
+
 .menu__buy.btn__buy {
   width: 209px;
   margin-bottom: 32px;
@@ -896,6 +899,11 @@ li {
 
 .header__buy.btn__buy {
   width: 160px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header__buy.btn__buy {
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .header__buy.btn__buy {
@@ -1200,7 +1208,6 @@ li {
   }
 }
 .retail__content {
-  padding-right: 20px;
   background-repeat: no-repeat;
   background-position: top 0 right 0;
 }
@@ -1217,6 +1224,7 @@ li {
 }
 @media screen and (min-width: 1280px) {
   .retail__content {
+    margin-right: 20px;
     background-image: url(/hero-white-circle.d8bbd7ed.png);
     background-size: 30px;
   }
