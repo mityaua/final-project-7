@@ -2126,7 +2126,7 @@ li {
   left: 47%;
   margin-right: 18px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .slider-point-1,
 .slider-point-1 + span {
     left: 35%;
@@ -2144,7 +2144,7 @@ li {
   left: 53%;
   margin-right: 18px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .slider-point-3,
 .slider-point-3 + span {
     left: 65%;
