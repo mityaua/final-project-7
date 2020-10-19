@@ -200,6 +200,11 @@ li {
   padding: 0;
 }
 
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
 @font-face {
   font-family: "DM Sans";
   src: local("DM Sans"), url("/DMSans-Regular.51277dd6.ttf") format("truetype");
@@ -1142,6 +1147,9 @@ li {
     align-items: flex-end;
   }
 }
+.card__image {
+  animation: float 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
 @media screen and (max-width: 1279px) {
   .card__image {
     width: 124px;
@@ -1210,6 +1218,7 @@ li {
 .retail__content {
   background-repeat: no-repeat;
   background-position: top 0 right 0;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .retail__content {
@@ -1236,6 +1245,9 @@ li {
 }
 .retail__content:first-child {
   margin-bottom: 13px;
+}
+.retail__content:hover, .retail__content:focus {
+  transform: scale(1.1);
 }
 .retail__number {
   display: block;
@@ -1857,6 +1869,10 @@ li {
     line-height: 1.76;
     letter-spacing: 0.02em;
   }
+}
+
+.features-foto {
+  animation: float 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .banner {
@@ -2509,6 +2525,10 @@ li {
 
 .footer-contacts {
   margin-bottom: 43px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-contacts:hover, .footer-contacts:focus {
+  transform: scale(1.1);
 }
 @media screen and (min-width: 768px) {
   .footer-contacts {
