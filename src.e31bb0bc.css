@@ -1600,6 +1600,7 @@ li {
     background-image: url(/features-2-1200.e60c47f5.png);
     background-position: left 50% top 342px;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -2078,7 +2079,7 @@ li {
   height: 400px;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .clear-slider {
     height: 550px;
   }
