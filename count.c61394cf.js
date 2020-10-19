@@ -117,83 +117,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\fonts\\DMSans-Regular.ttf":[["DMSans-Regular.51277dd6.ttf","fonts/DMSans-Regular.ttf"],"fonts/DMSans-Regular.ttf"],"./..\\fonts\\DMSans-Medium.ttf":[["DMSans-Medium.4e4c8d12.ttf","fonts/DMSans-Medium.ttf"],"fonts/DMSans-Medium.ttf"],"./..\\fonts\\DMSans-Bold.ttf":[["DMSans-Bold.0d25dc20.ttf","fonts/DMSans-Bold.ttf"],"fonts/DMSans-Bold.ttf"],"./..\\fonts\\TitanOne-Regular.ttf":[["TitanOne-Regular.c4ed25d0.ttf","fonts/TitanOne-Regular.ttf"],"fonts/TitanOne-Regular.ttf"],"./..\\images\\icons\\Vector-down-pink.png":[["Vector-down-pink.7cab91b4.png","images/icons/Vector-down-pink.png"],"images/icons/Vector-down-pink.png"],"./..\\images\\icons\\form-check.svg":[["form-check.688819c5.svg","images/icons/form-check.svg"],"images/icons/form-check.svg"],"./..\\images\\icons\\arrow-right-products.png":[["arrow-right-products.3c3458fe.png","images/icons/arrow-right-products.png"],"images/icons/arrow-right-products.png"],"C:\\Users\\mitya\\Documents\\GitHub\\final-project-7\\src\\images\\tablet\\hero-white-circle.png":[["hero-white-circle.3524a30b.png","images/tablet/hero-white-circle.png"],"images/tablet/hero-white-circle.png"],"C:\\Users\\mitya\\Documents\\GitHub\\final-project-7\\src\\images\\tablet\\hero-white-circle@2x.png":[["hero-white-circle@2x.e6ab8d8b.png","images/tablet/hero-white-circle@2x.png"],"images/tablet/hero-white-circle@2x.png"],"C:\\Users\\mitya\\Documents\\GitHub\\final-project-7\\src\\images\\desktop\\hero-white-circle.png":[["hero-white-circle.d8bbd7ed.png","images/desktop/hero-white-circle.png"],"images/desktop/hero-white-circle.png"],"C:\\Users\\mitya\\Documents\\GitHub\\final-project-7\\src\\images\\desktop\\hero-white-circle@2x.png":[["hero-white-circle@2x.d45ea3cf.png","images/desktop/hero-white-circle@2x.png"],"images/desktop/hero-white-circle@2x.png"],"./..\\images\\icons\\products-dots.png":[["products-dots.ea887801.png","images/icons/products-dots.png"],"images/icons/products-dots.png"],"./..\\images\\desktop\\features-2-1200.png":[["features-2-1200.e60c47f5.png","images/desktop/features-2-1200.png"],"images/desktop/features-2-1200.png"],"./..\\images\\mobile\\features-2-320.png":[["features-2-320.f8d63fc7.png","images/mobile/features-2-320.png"],"images/mobile/features-2-320.png"],"./..\\images\\mobile\\features-2-320@2x.png":[["features-2-320@2x.783e311b.png","images/mobile/features-2-320@2x.png"],"images/mobile/features-2-320@2x.png"],"./..\\images\\icons\\Vector-pink.png":[["Vector-pink.7b5d843f.png","images/icons/Vector-pink.png"],"images/icons/Vector-pink.png"],"./..\\images\\icons\\vector-ellipse.png":[["vector-ellipse.c9ea7367.png","images/icons/vector-ellipse.png"],"images/icons/vector-ellipse.png"],"./..\\images\\icons\\Vector-house.png":[["Vector-house.52b5e2da.png","images/icons/Vector-house.png"],"images/icons/Vector-house.png"],"./..\\images\\desktop\\location-bg.png":[["location-bg.91fec64b.png","images/desktop/location-bg.png"],"images/desktop/location-bg.png"],"./..\\images\\icons\\vector-white.png":[["vector-white.4f8699ba.png","images/icons/vector-white.png"],"images/icons/vector-white.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})({"js/count.js":[function(require,module,exports) {
+setTimeout(function () {
+  odometer.innerHTML = 721;
+}, 1000);
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -221,7 +149,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61228" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60396" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -397,5 +325,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/count.js"], null)
+//# sourceMappingURL=/count.c61394cf.js.map

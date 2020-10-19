@@ -2334,7 +2334,6 @@ li {
   margin-left: auto;
   margin-right: auto;
   width: 162px;
-  padding: 12px 0 12px;
   margin-bottom: 10px;
   border-radius: 22px;
   text-align: center;
@@ -2369,9 +2368,21 @@ li {
   background-color: #ECEBEB;
 }
 .btns-list__link {
+  display: inline-block;
+  padding: 12px 16px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .btns-list__link {
+    padding: 12px 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .btns-list__link {
+    padding: 12px 34px;
+  }
 }
 .btns-list__link--white {
   color: #FFFFFF;
@@ -2400,7 +2411,7 @@ li {
 
 .footer {
   background-color: #FFF5F6;
-  padding-top: 117px;
+  padding-top: 113px;
 }
 @media screen and (min-width: 768px) {
   .footer {
