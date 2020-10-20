@@ -31,7 +31,7 @@ _Привет!_ :wave:
 
 - [Ivan Kuchvara](https://github.com/Kuchvara)
 
-- [Ragimov Aalik](https://github.com/ragimovalik)
+- [Ragimov Alik](https://github.com/ragimovalik)
 
 - [Taras Vlas](https://github.com/taras-vlas)
 
@@ -52,9 +52,9 @@ _Привет!_ :wave:
 
 В результате слаженной командной работы :handshake: получился наш первый сайт:
 
-➡ [https://mityaua.github.io/final-project-7/](https://mityaua.github.io/final-project-7/)
+⬇ _Welcome!_ ⬇
 
-_Welcome!_
+[_Welcome!_](https://github.com/mityaua/final-project-7)
 
 [<img src="https://i.imgur.com/PS6Fpk5.png">](https://mityaua.github.io/final-project-7/)
 
