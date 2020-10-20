@@ -15,6 +15,26 @@ _Привет!_ :wave:
 преподавателя**. Каждый из них работал над **конкретными задачами**, которые
 распределял и контролировал тимлид.
 
+[**Team Lead:** Dmitriy S.](https://github.com/mityaua)
+
+[**Team Lead assistant & Project manager**: Yuliia-Petrova](https://github.com/Yuliia-Petrova)
+
+[**Scrum master**: AnnaOlenchuk](https://github.com/AnnaOlenchuk)
+
+[**Scrum master assistant**: Vita Khutorianska](https://github.com/vita-khutorianska)
+
+[Александр Стариченко](https://github.com/Glasgalas)
+
+[NikitaOmelianchuk](https://github.com/NikitaOmelianchuk)
+
+[Andrian Semenets](https://github.com/AndrianSemenets)
+
+[Ivan Kuchvara](https://github.com/Kuchvara)
+
+[ragimovalik](https://github.com/ragimovalik)
+
+[taras-vlas](https://github.com/taras-vlas)
+
 :computer: **Нашей целью** было сверстать адаптивный и дружелюбный к мобильным
 устройствам сайт, с высокой скоростью загрузки, поисковой оптимизацией, понятной
 навигацией и архитектурой.
