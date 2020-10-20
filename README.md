@@ -52,9 +52,7 @@ _Привет!_ :wave:
 
 В результате слаженной командной работы :handshake: получился наш первый сайт:
 
-⬇ _Welcome!_ ⬇
-
-[_Welcome!_](https://github.com/mityaua/final-project-7)
+⬇ [_Welcome!_](https://github.com/mityaua/final-project-7) ⬇
 
 [<img src="https://i.imgur.com/PS6Fpk5.png">](https://mityaua.github.io/final-project-7/)
 
