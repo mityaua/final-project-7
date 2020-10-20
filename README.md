@@ -12,28 +12,28 @@ _Привет!_ :wave:
 сайта **“Homemade Ice Cream”**: мобильная, планшетная и десктопная.
 
 :hammer_and_wrench: Над проектом трудились **11 человек, включая
-преподавателя**. Каждый из них работал над **конкретными задачами**, которые
-распределял и контролировал тимлид.
+ментора**. Каждый из них работал над **конкретными задачами**, которые
+распределял и контролировал тимлид:
 
-[**Team Lead:** Dmitriy S.](https://github.com/mityaua)
+- [**Team Lead:** Dmitriy S.](https://github.com/mityaua)
 
-[**Team Lead assistant & Project manager**: Yuliia Petrova](https://github.com/Yuliia-Petrova)
+- [**Team Lead assistant & Project manager**: Yuliia Petrova](https://github.com/Yuliia-Petrova)
 
-[**Scrum master**: Anna Olenchuk](https://github.com/AnnaOlenchuk)
+- [**Scrum master**: Anna Olenchuk](https://github.com/AnnaOlenchuk)
 
-[**Scrum master assistant**: Vita Khutorianska](https://github.com/vita-khutorianska)
+- [**Scrum master assistant**: Vita Khutorianska](https://github.com/vita-khutorianska)
 
-[Александр Стариченко](https://github.com/Glasgalas)
+- [Александр Стариченко](https://github.com/Glasgalas)
 
-[Nikita Omelianchuk](https://github.com/NikitaOmelianchuk)
+- [Nikita Omelianchuk](https://github.com/NikitaOmelianchuk)
 
-[Andrian Semenets](https://github.com/AndrianSemenets)
+- [Andrian Semenets](https://github.com/AndrianSemenets)
 
-[Ivan Kuchvara](https://github.com/Kuchvara)
+- [Ivan Kuchvara](https://github.com/Kuchvara)
 
-[Ragimov Aalik](https://github.com/ragimovalik)
+- [Ragimov Aalik](https://github.com/ragimovalik)
 
-[Taras Vlas](https://github.com/taras-vlas)
+- [Taras Vlas](https://github.com/taras-vlas)
 
 :computer: **Нашей целью** было сверстать адаптивный и дружелюбный к мобильным
 устройствам сайт, с высокой скоростью загрузки, поисковой оптимизацией, понятной
