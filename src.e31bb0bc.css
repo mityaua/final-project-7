@@ -1607,7 +1607,7 @@ li {
 @media screen and (max-width: 767px) {
   .features-container.container {
     background-image: url(/features-2-320.f8d63fc7.png);
-    background-position: 0px 766px;
+    background-position: left 50% top 766px;
     background-repeat: no-repeat;
     background-size: contain;
   }
